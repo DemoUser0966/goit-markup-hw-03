@@ -18,8 +18,21 @@ ul {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
 /*container*/
 .container {
+  padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1158px;
@@ -46,6 +59,8 @@ ul {
 .header {
   display: flex;
   align-items: center;
+  font-weight: 500;
+  border-bottom: 1px solid #E7E9FC;
 }
 
 .nav-header {
@@ -105,13 +120,14 @@ ul {
 }
 
 .address {
+  font-style: normal;
   margin-left: auto;
 }
 /*body*/
 
 .hero-section {
-  left: 0px;
-  top: 72px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--title-text-color);
   align-items: center;
 }
@@ -124,21 +140,25 @@ ul {
   max-width: 494px;
   left: 473px;
   top: 260px;
-  margin: 0px 317px 48px 317px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 .hero-button {
   padding: 16px 32px;
   border-radius: 4px;
   text-align: center;
+  border: 1px solid transparent;
 
-  margin: 0px 480px 188px 480px;
+  margin: 0 auto;
+  display: block;
 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   color: var(--white-color);
   cursor: pointer;
 }
@@ -150,9 +170,14 @@ ul {
 
 /*sectio two*/
 
+.section-two {
+  padding-top: 120px;
+}
+
 .list-two {
   display: flex;
 }
+
 
 .list-text:not(:last-child) {
   margin-right: 24px;
@@ -167,7 +192,7 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 32px;
+  
   margin-bottom: 8px;
 }
 
@@ -177,10 +202,15 @@ ul {
   line-height: 1.5;
   color: var(--text-color);
   margin-top: 0;
-  margin-bottom: 32px;
+  
 }
 
 /*section-three*/
+
+.section-three {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .list-three {
   display: flex;
@@ -191,7 +221,8 @@ ul {
 }
 
 .title-three {
-  margin: 120px 403px 72px 403px;
+  margin-bottom: 72px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 36px;
@@ -199,8 +230,24 @@ ul {
 }
 
 /*section-four*/
+
+.section-four {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .list-four {
   display: flex;
+}
+
+.list-text-img {
+  background-color: var(--white-color);
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .list-text-img:not(:last-child) {
@@ -211,8 +258,14 @@ ul {
   background-color: #f4f4fd;
 }
 
+.text-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .title-four {
-  margin: 120px 483px 72px 483px;
+  margin-bottom: 72px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 36px;
@@ -223,6 +276,7 @@ ul {
 
 .footer {
   background: var(--title-text-color);
+  padding: 100px 0px;
 }
 .title-footer {
   font-family: "Raleway", sans-serif;
@@ -247,23 +301,24 @@ ul {
 /*portfolio*/
 
 .section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
   width: 1158px;
 }
 
 .list-button {
   display: flex;
+  justify-content: center;
+  
 }
 
 .btn {
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 .btn:not(:last-child) {
   margin-right: 24px;
 }
-.btn:first-child {
-  margin-left: 271px;
-}
+
 
 .button-portfolio {
   background: var(--background-color-button);
@@ -274,7 +329,8 @@ ul {
   line-height: 1.5;
   cursor: pointer;
   padding: 12px 24px;
-  border: 1px solid #e7e9fc;
+ 
+  border: 1px solid transparent;
   border-radius: 4px;
 }
 
@@ -290,12 +346,22 @@ ul {
 }
 
 .portfolio-img:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 23px;
 }
 
 .portfolio-img {
   border: 1px solid #e7e9fc;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
+}
+
+.postcard-prtf {
+  padding-top: 32px;
+  border-left:1px solid #e7e9fc; 
+  border-bottom:1px solid #e7e9fc; 
+  border-right: 1px solid #e7e9fc; ;
+  
+
+
 }
 
 .list-item-portfolio {
@@ -303,9 +369,9 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   color: var(--title-text-color);
-  margin-top: 32px;
+  
   margin-bottom: 8px;
-  margin-left: 16px;
+  
 }
 .list-skills-portfolio {
   font-weight: 400;
@@ -313,5 +379,5 @@ ul {
   line-height: 1.5;
   color: var(--text-color);
   margin-bottom: 32px;
-  margin-left: 16px;
+  
 }
