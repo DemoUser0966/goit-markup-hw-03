@@ -259,6 +259,7 @@ img {
 }
 
 .text-card {
+  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -309,11 +310,12 @@ img {
 .list-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 72px;
   
 }
 
 .btn {
-  margin-bottom: 72px;
+  
 }
 .btn:not(:last-child) {
   margin-right: 24px;
@@ -358,7 +360,9 @@ img {
   padding-top: 32px;
   border-left:1px solid #e7e9fc; 
   border-bottom:1px solid #e7e9fc; 
-  border-right: 1px solid #e7e9fc; ;
+  border-right: 1px solid #e7e9fc; 
+  padding-left: 16px;
+  padding-bottom: 32px;
   
 
 
@@ -378,6 +382,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
-  margin-bottom: 32px;
+ 
   
 }
